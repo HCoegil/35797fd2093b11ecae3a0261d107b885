@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "name": "DogePriceOverTime",
+  "queries": {
+    "data-1e457bfc-4730-4808-bafc-dffc83bc8991": {
+      "assetGuid": "35797fd2093b11ecae3a0261d107b885",
+      "artifactGuid": "908db1e4d6914ebab16d87b9e84adf94",
+      "artifactType": "my_sql",
+      "queryText": "select date, close from dogecoin d",
+      "parameters": [],
+      "id": "data-1e457bfc-4730-4808-bafc-dffc83bc8991",
+      "dataStoreId": "908db1e4d6914ebab16d87b9e84adf94",
+      "transforms": [],
+      "type": "data_query"
+    }
+  },
+  "tabs": [
+    {
+      "id": "da3cba83-d61e-4968-a016-f297dbc3be3f",
+      "name": "Untitled",
+      "charts": [
+        {
+          "config": {
+            "specificConfig": {
+              "labelColumn": 0,
+              "seriesToInclude": [
+                0,
+                1
+              ],
+              "showLegend": false,
+              "curvedLines": false,
+              "pointStyles": {},
+              "lineStyles": {
+                "close": []
+              },
+              "downSample": 20,
+              "colors": [
+                "#2176D9",
+                "#2176D9"
+              ],
+              "yAxisIds": {
+                "date": "0c1149b2-29a3-49ec-92b3-0039c33c7812",
+                "close": "f1512fcc-b9f3-4c72-a4f8-b9f09fe4bea3"
+              },
+              "axisOptions": [
+                {
+                  "id": "f1512fcc-b9f3-4c72-a4f8-b9f09fe4bea3",
+                  "include": true,
+                  "format": "general",
+                  "position": "Left"
+                },
+                {
+                  "id": "7577d172-c173-4bac-8750-194efe2aa0d9",
+                  "include": false,
+                  "position": "Right"
+                },
+                {
+                  "id": "0c1149b2-29a3-49ec-92b3-0039c33c7812",
+                  "include": true,
+                  "position": "Bottom"
+                }
+              ]
+            },
+            "type": "line",
+            "aliases": {}
+          },
+          "id": "23d06321-0658-4087-8610-7983fab6db81",
+          "queryId": "data-1e457bfc-4730-4808-bafc-dffc83bc8991",
+          "tabId": "da3cba83-d61e-4968-a016-f297dbc3be3f",
+          "filters": [],
+          "positionInfo": {
+            "height": 3,
+            "width": 8,
+            "xCoordinate": 0,
+            "yCoordinate": 0
+          }
+        }
+      ]
+    }
+  ]
+}
