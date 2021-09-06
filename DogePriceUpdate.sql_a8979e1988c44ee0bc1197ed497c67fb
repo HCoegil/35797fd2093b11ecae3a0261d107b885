@@ -1,0 +1,4 @@
+{
+  "query": "update dogecoin\nset high = high + 0.01",
+  "params": []
+}

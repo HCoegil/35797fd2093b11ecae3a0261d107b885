@@ -6,11 +6,10 @@
       "assetGuid": "35797fd2093b11ecae3a0261d107b885",
       "artifactGuid": "908db1e4d6914ebab16d87b9e84adf94",
       "artifactType": "my_sql",
-      "queryText": "select date, close from dogecoin d",
+      "queryText": "select date, low, high, close from dogecoin d",
       "parameters": [],
       "id": "data-1e457bfc-4730-4808-bafc-dffc83bc8991",
       "dataStoreId": "908db1e4d6914ebab16d87b9e84adf94",
-      "transforms": [],
       "type": "data_query"
     }
   },
@@ -25,21 +24,29 @@
               "labelColumn": 0,
               "seriesToInclude": [
                 0,
-                1
+                1,
+                2,
+                3
               ],
               "showLegend": false,
               "curvedLines": false,
               "pointStyles": {},
               "lineStyles": {
+                "low": [],
+                "high": [],
                 "close": []
               },
               "downSample": 20,
               "colors": [
                 "#2176D9",
-                "#2176D9"
+                "#2176D9",
+                "#ACD921",
+                "#D121D9"
               ],
               "yAxisIds": {
                 "date": "0c1149b2-29a3-49ec-92b3-0039c33c7812",
+                "low": "f1512fcc-b9f3-4c72-a4f8-b9f09fe4bea3",
+                "high": "f1512fcc-b9f3-4c72-a4f8-b9f09fe4bea3",
                 "close": "f1512fcc-b9f3-4c72-a4f8-b9f09fe4bea3"
               },
               "axisOptions": [
@@ -69,8 +76,8 @@
           "tabId": "da3cba83-d61e-4968-a016-f297dbc3be3f",
           "filters": [],
           "positionInfo": {
-            "height": 3,
-            "width": 8,
+            "height": 6,
+            "width": 12,
             "xCoordinate": 0,
             "yCoordinate": 0
           }
